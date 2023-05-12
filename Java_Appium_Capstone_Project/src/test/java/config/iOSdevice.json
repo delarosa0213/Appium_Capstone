@@ -1,0 +1,8 @@
+{
+  "platformName": "ios",
+  "platformVersion": "16.4",
+  "deviceName": "iPhone 14 Pro",
+  "appLink": "src/test/resources/resource/UIKitCatalog.app",
+  "udid": "199638C3-E390-4F92-9972-D24716E4199D",
+  "automationName": "XCUITest"
+}
