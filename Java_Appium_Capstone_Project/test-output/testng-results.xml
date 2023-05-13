@@ -1,96 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="14" failed="4" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-12T16:40:37 PST" name="Default suite" finished-at="2023-05-12T16:42:20 PST" duration-ms="102646">
+  <suite started-at="2023-05-13T22:25:30 PST" name="Default suite" finished-at="2023-05-13T22:25:43 PST" duration-ms="13280">
     <groups>
     </groups>
-    <test started-at="2023-05-12T16:40:37 PST" name="Default test" finished-at="2023-05-12T16:42:20 PST" duration-ms="102646">
-      <class name="iOS.tests.Test.AppiumIphoneMain">
-        <test-method signature="setup()[pri:1, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:40:37 PST" name="setup" finished-at="2023-05-12T16:40:45 PST" duration-ms="7369" status="PASS">
+    <test started-at="2023-05-13T22:25:30 PST" name="Default test" finished-at="2023-05-13T22:25:43 PST" duration-ms="13280">
+      <class name="Android.tests.Test.AppiumMain">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Android.tests.Test.AppiumMain@13e344d]" started-at="2023-05-13T22:25:30 PST" name="setup" finished-at="2023-05-13T22:25:35 PST" duration-ms="5346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="scrollGes()[pri:2, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:40:45 PST" name="scrollGes" finished-at="2023-05-12T16:40:46 PST" duration-ms="1199" status="PASS">
+        <test-method signature="applLaunch()[pri:1, instance:Android.tests.Test.AppiumMain@13e344d]" started-at="2023-05-13T22:25:35 PST" name="applLaunch" finished-at="2023-05-13T22:25:43 PST" duration-ms="7286" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrollGes -->
-        <test-method signature="actIndicator()[pri:3, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:40:46 PST" name="actIndicator" finished-at="2023-05-12T16:40:50 PST" duration-ms="3680" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- actIndicator -->
-        <test-method signature="datePicker()[pri:4, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:40:50 PST" name="datePicker" finished-at="2023-05-12T16:40:54 PST" duration-ms="4924" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- datePicker -->
-        <test-method signature="timePicker()[pri:5, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:40:54 PST" name="timePicker" finished-at="2023-05-12T16:41:04 PST" duration-ms="9817" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- timePicker -->
-        <test-method signature="ImageView()[pri:6, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:41:04 PST" name="ImageView" finished-at="2023-05-12T16:41:14 PST" duration-ms="9525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ImageView -->
-        <test-method signature="pageControl()[pri:7, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:41:14 PST" name="pageControl" finished-at="2023-05-12T16:41:16 PST" duration-ms="2658" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageControl -->
-        <test-method signature="pickView()[pri:8, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:41:17 PST" name="pickView" finished-at="2023-05-12T16:41:19 PST" duration-ms="2795" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pickView -->
-        <test-method signature="progView()[pri:9, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:41:19 PST" name="progView" finished-at="2023-05-12T16:41:31 PST" duration-ms="12069" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- progView -->
-        <test-method signature="searchView()[pri:10, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:41:31 PST" name="searchView" finished-at="2023-05-12T16:41:41 PST" duration-ms="9586" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchView -->
-        <test-method signature="segmentedControls()[pri:11, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:41:41 PST" name="segmentedControls" finished-at="2023-05-12T16:41:45 PST" duration-ms="4052" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- segmentedControls -->
-        <test-method signature="sliderControl()[pri:12, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:41:45 PST" name="sliderControl" finished-at="2023-05-12T16:41:50 PST" duration-ms="4856" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sliderControl -->
-        <test-method signature="stackViews()[pri:13, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:41:50 PST" name="stackViews" finished-at="2023-05-12T16:41:57 PST" duration-ms="7012" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- applLaunch -->
+        <test-method signature="Register()[pri:2, instance:Android.tests.Test.AppiumMain@13e344d]" started-at="2023-05-13T22:25:43 PST" name="Register" finished-at="2023-05-13T22:25:43 PST" duration-ms="248" status="FAIL">
+          <exception class="java.lang.NoSuchFieldError">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'b19b418e60'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [c29c8747-0436-4671-95c0-13381a5825d5, findElement {using=xpath, value=(//XCUIElementTypeButton[@name="stepper increment"])[2]}]
-Capabilities {appium:app: /Users/collabera/eclipse-wo..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPhone 14 Pro, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 199638C3-E390-4F92-9972-D24..., appium:webStorageEnabled: false, platformName: IOS}
-Session ID: c29c8747-0436-4671-95c0-13381a5825d5]]>
+              <![CDATA[Factory]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'b19b418e60'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [c29c8747-0436-4671-95c0-13381a5825d5, findElement {using=xpath, value=(//XCUIElementTypeButton[@name="stepper increment"])[2]}]
-Capabilities {appium:app: /Users/collabera/eclipse-wo..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPhone 14 Pro, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 199638C3-E390-4F92-9972-D24..., appium:webStorageEnabled: false, platformName: IOS}
-Session ID: c29c8747-0436-4671-95c0-13381a5825d5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at iOS.tests.Pages.StackViews_Page.stackView(StackViews_Page.java:32)
-at iOS.tests.Test.AppiumIphoneMain.stackViews(AppiumIphoneMain.java:96)
+              <![CDATA[java.lang.NoSuchFieldError: Factory
+at org.apache.poi.xssf.model.ThemesTable.readFrom(ThemesTable.java:119)
+at org.apache.poi.xssf.model.ThemesTable.<init>(ThemesTable.java:87)
+at org.apache.poi.ooxml.POIXMLFactory.createDocumentPart(POIXMLFactory.java:61)
+at org.apache.poi.ooxml.POIXMLDocumentPart.read(POIXMLDocumentPart.java:661)
+at org.apache.poi.ooxml.POIXMLDocument.load(POIXMLDocument.java:165)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:260)
+at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.createWorkbook(XSSFWorkbookFactory.java:118)
+at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:98)
+at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:36)
+at org.apache.poi.ss.usermodel.WorkbookFactory.lambda$create$2(WorkbookFactory.java:224)
+at org.apache.poi.ss.usermodel.WorkbookFactory.wp(WorkbookFactory.java:329)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:224)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+at Android.tests.Pages.Register_PageExcel.registerUserFromExcel(Register_PageExcel.java:58)
+at Android.tests.Test.AppiumMain.Register(AppiumMain.java:73)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -119,223 +65,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NoSuchFieldError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stackViews -->
-        <test-method signature="switches()[pri:14, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:41:57 PST" name="switches" finished-at="2023-05-12T16:42:01 PST" duration-ms="4409" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'b19b418e60'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [c29c8747-0436-4671-95c0-13381a5825d5, findElement {using=-ios class chain, value=**/XCUIElementTypeSwitch[`value == '1'`][2]}]
-Capabilities {appium:app: /Users/collabera/eclipse-wo..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPhone 14 Pro, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 199638C3-E390-4F92-9972-D24..., appium:webStorageEnabled: false, platformName: IOS}
-Session ID: c29c8747-0436-4671-95c0-13381a5825d5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'b19b418e60'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [c29c8747-0436-4671-95c0-13381a5825d5, findElement {using=-ios class chain, value=**/XCUIElementTypeSwitch[`value == '1'`][2]}]
-Capabilities {appium:app: /Users/collabera/eclipse-wo..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPhone 14 Pro, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 199638C3-E390-4F92-9972-D24..., appium:webStorageEnabled: false, platformName: IOS}
-Session ID: c29c8747-0436-4671-95c0-13381a5825d5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at iOS.tests.Pages.Switch_Page.switchPage(Switch_Page.java:22)
-at iOS.tests.Test.AppiumIphoneMain.switches(AppiumIphoneMain.java:102)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- Register -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Android.tests.Test.AppiumMain@13e344d]" started-at="2023-05-13T22:25:43 PST" name="tearDown" finished-at="2023-05-13T22:25:43 PST" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- switches -->
-        <test-method signature="textField()[pri:15, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:42:01 PST" name="textField" finished-at="2023-05-12T16:42:10 PST" duration-ms="8285" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'b19b418e60'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [c29c8747-0436-4671-95c0-13381a5825d5, findElement {using=-ios class chain, value=**/XCUIElementTypeTextField[`value == 'Placeholder text'`][3]}]
-Capabilities {appium:app: /Users/collabera/eclipse-wo..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPhone 14 Pro, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 199638C3-E390-4F92-9972-D24..., appium:webStorageEnabled: false, platformName: IOS}
-Session ID: c29c8747-0436-4671-95c0-13381a5825d5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'b19b418e60'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [c29c8747-0436-4671-95c0-13381a5825d5, findElement {using=-ios class chain, value=**/XCUIElementTypeTextField[`value == 'Placeholder text'`][3]}]
-Capabilities {appium:app: /Users/collabera/eclipse-wo..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPhone 14 Pro, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 199638C3-E390-4F92-9972-D24..., appium:webStorageEnabled: false, platformName: IOS}
-Session ID: c29c8747-0436-4671-95c0-13381a5825d5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at iOS.tests.Pages.TextField_Page.txtField(TextField_Page.java:22)
-at iOS.tests.Test.AppiumIphoneMain.textField(AppiumIphoneMain.java:107)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- textField -->
-        <test-method signature="toolBars()[pri:16, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:42:10 PST" name="toolBars" finished-at="2023-05-12T16:42:14 PST" duration-ms="4255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toolBars -->
-        <test-method signature="alert()[pri:17, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:42:14 PST" name="alert" finished-at="2023-05-12T16:42:18 PST" duration-ms="3616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- alert -->
-        <test-method signature="webViews()[pri:17, instance:iOS.tests.Test.AppiumIphoneMain@55634720]" started-at="2023-05-12T16:42:18 PST" name="webViews" finished-at="2023-05-12T16:42:20 PST" duration-ms="2232" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'b19b418e60'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [c29c8747-0436-4671-95c0-13381a5825d5, findElement {using=accessibility id, value=This is HTML content inside a }]
-Capabilities {appium:app: /Users/collabera/eclipse-wo..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPhone 14 Pro, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 199638C3-E390-4F92-9972-D24..., appium:webStorageEnabled: false, platformName: IOS}
-Session ID: c29c8747-0436-4671-95c0-13381a5825d5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'b19b418e60'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [c29c8747-0436-4671-95c0-13381a5825d5, findElement {using=accessibility id, value=This is HTML content inside a }]
-Capabilities {appium:app: /Users/collabera/eclipse-wo..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPhone 14 Pro, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 199638C3-E390-4F92-9972-D24..., appium:webStorageEnabled: false, platformName: IOS}
-Session ID: c29c8747-0436-4671-95c0-13381a5825d5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at iOS.tests.Pages.WebViews_Page.webViews(WebViews_Page.java:32)
-at iOS.tests.Test.AppiumIphoneMain.webViews(AppiumIphoneMain.java:118)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- webViews -->
-      </class> <!-- iOS.tests.Test.AppiumIphoneMain -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- Android.tests.Test.AppiumMain -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,13 +1,18 @@
 package iOS.tests.Pages;
 
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.ios.IOSDriver;
 
 public class ActivityIndicator_Page {
 	static IOSDriver driver;
-	public ActivityIndicator_Page(IOSDriver driver) 
+	ExtentTest test;
+	public ActivityIndicator_Page(IOSDriver driver, ExtentTest test) 
 	{
         this.driver = driver;
+        this.test = test;
     }
 	
 	public void actvityIndi() {
@@ -19,7 +24,8 @@ public class ActivityIndicator_Page {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
+		test.log(LogStatus.INFO, "The activity indicator appeared!");
 
 		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]")).click();
 	}

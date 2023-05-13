@@ -4,15 +4,21 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.ios.IOSDriver;
 
 public class ImageView_Page {
-	static IOSDriver driver;
 	
-	public ImageView_Page(IOSDriver driver) 
+	static IOSDriver driver;
+	ExtentTest test;
+	
+	public ImageView_Page(IOSDriver driver, ExtentTest test) 
 	{
         this.driver = driver;
+        this.test = test;
     }
 	
 	public void imageView() throws InterruptedException {
@@ -32,6 +38,7 @@ public class ImageView_Page {
 		        String imageName = animatedImage.getAttribute("name");
 		        if (imageName != null && !imageName.equals(previousImageName)) {
 		            System.out.println("Images are present they are alternating");
+		            test.log(LogStatus.INFO, "Images are present they are alternating");
 		            previousImageName = imageName;
 		            break; // Exit the loop if an alternating image is found
 		        }

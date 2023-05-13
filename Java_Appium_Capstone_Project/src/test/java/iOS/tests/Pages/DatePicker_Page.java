@@ -3,19 +3,25 @@ package iOS.tests.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.ios.IOSDriver;
 
 public class DatePicker_Page {
     static IOSDriver driver;
-    public DatePicker_Page(IOSDriver driver) 
+    ExtentTest test;
+    public DatePicker_Page(IOSDriver driver, ExtentTest test) 
     {
         this.driver = driver;
+        this.test = test;
     }
     
     public void datePick() throws InterruptedException {
         driver.findElement(AppiumBy.accessibilityId("Date Picker")).click();
-        driver.findElement(AppiumBy.accessibilityId("May 12, 2023")).click();
+        
+        driver.findElement(AppiumBy.accessibilityId("Date and Time Picker")).click();
         
         boolean pickerWheelSendKeys = false;
         boolean staticTextClickable =  driver.findElement(AppiumBy.accessibilityId("Next Month")).isEnabled();
@@ -26,12 +32,14 @@ public class DatePicker_Page {
             pickerWheelSendKeys = true;
         } else {
             System.out.println("Element not clickable, cannot  change month");
+            test.log(LogStatus.FAIL, "Button not clickable, cannot change month");
         }
         
         if (pickerWheelSendKeys) {
             driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypePickerWheel[`value == 'May'`]")).sendKeys("June");
         } else {
             System.out.println("Cannot send keys to the element");
+            test.log(LogStatus.FAIL, "Cannot change the date!");
         }
         
         Thread.sleep(2000);
@@ -62,6 +70,7 @@ public class DatePicker_Page {
         
         String buttonText =  driver.findElement(By.xpath("//XCUIElementTypeButton[2]")).getText();
         System.out.println("The time is " + buttonText);
+        test.log(LogStatus.INFO,"The time is: " + buttonText);
 
         }
     
