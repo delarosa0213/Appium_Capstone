@@ -1,6 +1,9 @@
 package iOS.tests.Pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -18,12 +21,17 @@ public class Search_Page {
         this.driver = driver;
         this.test = test;
     }
-	public void search() {
-
-	    driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]")).click();
-	    
+	public void search() throws InterruptedException {
+		List<WebElement> elements = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]"));
+	    if (!elements.isEmpty()) {
+	        elements.get(0).click();
+	    } else {
+	        // Element not found, proceed with the rest of the code
+	    }
 	    
 		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == 'Search'`]")).click();
+		
+		Thread.sleep(2000);
 		
 		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == 'Default'`]")).click();
 		
@@ -31,8 +39,14 @@ public class Search_Page {
 		
 		test.log(LogStatus.PASS, "Successfully changed from Scope One to Scope Two");
 		
-		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'Search'`]")).click();
+		List<WebElement> elements1 = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'Search'`]"));
+	    if (!elements1.isEmpty()) {
+	        elements1.get(0).click();
+	    } else {
+	        // Element not found, proceed with the rest of the code
+	    }
 		
+	    
 		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == 'Custom'`]")).click();
 
 		driver.findElement(By.xpath("//XCUIElementTypeSearchField")).click();
@@ -44,7 +58,13 @@ public class Search_Page {
 		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeKey[`label == 'e'`]")).click();
 		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeKey[`label == 'l'`]")).click();
 		
+		List<WebElement> elements2 = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'Search'`]"));
+	    if (!elements2.isEmpty()) {
+	        elements2.get(0).click();
+	    } else {
+	        // Element not found, proceed with the rest of the code
+	    }
 		
-		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'Search'`]")).click();
+		Thread.sleep(2000);
 	}
 }

@@ -1,5 +1,7 @@
 package iOS.tests.Pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -21,8 +23,12 @@ public class StackViews_Page {
     }
 	
 	public void stackView() throws InterruptedException {
-		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]")).click();
-		
+		List<WebElement> elements = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]"));
+	    if (!elements.isEmpty()) {
+	        elements.get(0).click();
+	    } else {
+	        // Element not found, proceed with the rest of the code
+	    }
 		driver.findElement(AppiumBy.accessibilityId("Stack Views")).click();
 		
 		driver.findElement(By.xpath("(//XCUIElementTypeButton[@name=\"stepper increment\"])[1]")).click();

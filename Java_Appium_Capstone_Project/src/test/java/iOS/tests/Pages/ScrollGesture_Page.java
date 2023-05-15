@@ -44,11 +44,37 @@ import java.util.HashMap;
 			driver.executeScript("mobile:scroll", scroll);
 			test.log(LogStatus.PASS, "Scrolled successfully");
 			
-			List<WebElement> options = driver.findElements(MobileBy.iOSClassChain("**/XCUIElementTypeButton"));
-			System.out.println("Number of options available: " + options.size());
-			test.log(LogStatus.INFO, "Number of options available: " + options.size());
-			
-			File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			List<WebElement> options = driver.findElements(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText"));
+		    int count = 0;
+		    for (WebElement option : options) {
+		        String label = option.getAttribute("label");
+		        if (label != null) {
+		            label = label.trim();
+		            if (label.equals("Activity Indicators")
+		                || label.equals("Alert Views")
+		                || label.equals("Buttons")
+		                || label.equals("Date Picker")
+		                || label.equals("Image View")
+		                || label.equals("Page Control")
+		                || label.equals("Picker View")
+		                || label.equals("Progress Views")
+		                || label.equals("Search")
+		                || label.equals("Segmented Controls")
+		                || label.equals("Sliders")
+		                || label.equals("Stack Views")
+		                || label.equals("Steppers")
+		                || label.equals("Switches")
+		                || label.equals("Text Fields")
+		                || label.equals("Text View")
+		                || label.equals("Toolbars")
+		                || label.equals("Web View")) {
+		                count++;
+		            }
+		        }
+		    }
+		    System.out.println("Number of options: " + count);
+		    test.log(LogStatus.INFO, "Number of options: " + count);
+		    File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	        String screenshotPath = directory.getAbsolutePath() + "/screenshots/Printing Options.png";
 	        FileUtils.copyFile(screenshotFile, new File(screenshotPath));
 

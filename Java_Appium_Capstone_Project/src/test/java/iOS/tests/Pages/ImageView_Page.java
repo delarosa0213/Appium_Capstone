@@ -1,6 +1,7 @@
 package iOS.tests.Pages;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.WebElement;
 
@@ -22,10 +23,15 @@ public class ImageView_Page {
     }
 	
 	public void imageView() throws InterruptedException {
-		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]")).click();
-		
+		List<WebElement> elements = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]"));
+	    if (!elements.isEmpty()) {
+	        elements.get(0).click();
+	    } else {
+	        // Element not found, proceed with the rest of the code
+	    }
+	    
 		driver.findElement(AppiumBy.accessibilityId("Image View")).click();
-		
+	    
 		
 		List<WebElement> animatedImages = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeImage[`label == 'Animated'`]"));
 

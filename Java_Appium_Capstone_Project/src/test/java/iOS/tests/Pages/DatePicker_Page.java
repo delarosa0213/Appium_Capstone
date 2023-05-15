@@ -19,6 +19,9 @@ public class DatePicker_Page {
     }
     
     public void datePick() throws InterruptedException {
+    	
+    	Thread.sleep(2000);
+    	
         driver.findElement(AppiumBy.accessibilityId("Date Picker")).click();
         
         driver.findElement(AppiumBy.accessibilityId("Date and Time Picker")).click();

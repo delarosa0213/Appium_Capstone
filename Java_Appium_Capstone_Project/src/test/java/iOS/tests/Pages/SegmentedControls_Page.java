@@ -2,10 +2,12 @@ package iOS.tests.Pages;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -27,8 +29,12 @@ public class SegmentedControls_Page {
     }
 	
 	public void segmentedControl() throws IOException, InterruptedException {
-		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]")).click();
-		
+		List<WebElement> elements = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]"));
+	    if (!elements.isEmpty()) {
+	        elements.get(0).click();
+	    } else {
+	        // Element not found, proceed with the rest of the code
+	    }
 		driver.findElement(AppiumBy.accessibilityId("Segmented Controls")).click();
 		
 		File screenshotFile1 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

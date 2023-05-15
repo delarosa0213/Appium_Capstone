@@ -1,6 +1,7 @@
 package iOS.tests.Pages;
 
 import java.util.HashMap;
+import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -22,9 +23,12 @@ public class WebViews_Page {
         this.test = test;
     }
 	public void webViews() throws InterruptedException {
-		
-		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]")).click();
-		
+		List<WebElement> elements = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]"));
+	    if (!elements.isEmpty()) {
+	        elements.get(0).click();
+	    } else {
+	        // Element not found, proceed with the rest of the code
+	    }
 		WebElement ele = driver.findElement(AppiumBy.accessibilityId("Web View"));
 		
 		HashMap<String, Object> scroll = new HashMap<String, Object>();

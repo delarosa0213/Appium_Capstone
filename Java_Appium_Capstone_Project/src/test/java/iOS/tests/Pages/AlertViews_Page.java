@@ -2,6 +2,8 @@ package iOS.tests.Pages;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -26,10 +28,15 @@ public class AlertViews_Page {
     }
 	
 	public void alertViews() throws InterruptedException, IOException {
-		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]")).click();
-		
+		List<WebElement> elements = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]"));
+	    if (!elements.isEmpty()) {
+	        elements.get(0).click();
+	    } else {
+	        // Element not found, proceed with the rest of the code
+	    }
 		driver.findElement(AppiumBy.accessibilityId("Alert Views")).click();
-		
+	    
+	    
 		driver.findElement(AppiumBy.accessibilityId("Simple")).click();
 		
 		System.out.println("The message box has been shown.");

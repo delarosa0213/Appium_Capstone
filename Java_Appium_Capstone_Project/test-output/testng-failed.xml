@@ -3,13 +3,30 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="iOS.tests.Test.AppiumIPADmain">
+      <class name="iOS.tests.Test.AppiumIphoneMain">
         <methods>
+          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="stackViews"/>
+          <include name="ImageView"/>
+          <include name="pageControl"/>
+          <include name="webViews"/>
+          <include name="segmentedControls"/>
+          <include name="timePicker"/>
+          <include name="actIndicator"/>
+          <include name="progView"/>
+          <include name="datePicker"/>
+          <include name="toolBars"/>
+          <include name="scrollGes"/>
+          <include name="alert"/>
+          <include name="pickView"/>
+          <include name="switches"/>
           <include name="textField"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="sliderControl"/>
+          <include name="searchView"/>
         </methods>
-      </class> <!-- iOS.tests.Test.AppiumIPADmain -->
+      </class> <!-- iOS.tests.Test.AppiumIphoneMain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

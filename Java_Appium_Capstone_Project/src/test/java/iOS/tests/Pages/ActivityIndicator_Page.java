@@ -2,10 +2,13 @@ package iOS.tests.Pages;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -25,9 +28,14 @@ public class ActivityIndicator_Page {
     }
 	
 	public void actvityIndi() throws IOException, InterruptedException {
-		driver.findElement (AppiumBy.accessibilityId("Activity Indicators")).click();
+		List<WebElement> elements = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]"));
+	    if (!elements.isEmpty()) {
+	        elements.get(0).click();
+	    } else {
+	        // Element not found, proceed with the rest of the code
+	    }
 		
-		Thread.sleep(2000);
+	    driver.findElement (AppiumBy.accessibilityId("Activity Indicators")).click();
 		
 
 		test.log(LogStatus.INFO, "The activity indicator appeared!");
@@ -43,8 +51,12 @@ public class ActivityIndicator_Page {
         
         Thread.sleep(2000);
         
-        driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]")).click();
-
+        List<WebElement> elements1 = driver.findElements(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]"));
+	    if (!elements1.isEmpty()) {
+	        elements1.get(0).click();
+	    } else {
+	        // Element not found, proceed with the rest of the code
+	    }
 	}
 
 }
