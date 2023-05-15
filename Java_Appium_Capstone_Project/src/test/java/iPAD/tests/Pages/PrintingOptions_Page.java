@@ -1,7 +1,12 @@
 package iPAD.tests.Pages;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -14,13 +19,15 @@ import io.appium.java_client.ios.IOSDriver;
 public class PrintingOptions_Page {
 	static IOSDriver driver;
 	ExtentTest test;
+	private File directory; 
 	
-	public PrintingOptions_Page(IOSDriver driver,ExtentTest test) 
+	public PrintingOptions_Page(IOSDriver driver,ExtentTest test, File directory) 
 	{
         this.driver = driver;
         this.test = test;
+        this.directory = directory;
     }
-	public void print() {
+	public void print() throws IOException {
 	    List<WebElement> options = driver.findElements(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText"));
 	    int count = 0;
 	    for (WebElement option : options) {
@@ -51,6 +58,12 @@ public class PrintingOptions_Page {
 	    }
 	    System.out.println("Number of options: " + count);
 	    test.log(LogStatus.INFO, "Number of options: " + count);
+	    File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String screenshotPath = directory.getAbsolutePath() + "/screenshots/Printing Options.png";
+        FileUtils.copyFile(screenshotFile, new File(screenshotPath));
+
+        // Log the screenshot in the report
+        test.log(LogStatus.INFO, "Printing Options: " + test.addScreenCapture(screenshotPath));
 	}
 
 

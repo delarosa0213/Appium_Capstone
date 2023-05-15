@@ -1,42 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-13T22:25:30 PST" name="Default suite" finished-at="2023-05-13T22:25:43 PST" duration-ms="13280">
+  <suite started-at="2023-05-15T16:56:31 PST" name="Default suite" finished-at="2023-05-15T16:58:13 PST" duration-ms="101993">
     <groups>
     </groups>
-    <test started-at="2023-05-13T22:25:30 PST" name="Default test" finished-at="2023-05-13T22:25:43 PST" duration-ms="13280">
-      <class name="Android.tests.Test.AppiumMain">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Android.tests.Test.AppiumMain@13e344d]" started-at="2023-05-13T22:25:30 PST" name="setup" finished-at="2023-05-13T22:25:35 PST" duration-ms="5346" status="PASS">
+    <test started-at="2023-05-15T16:56:31 PST" name="Default test" finished-at="2023-05-15T16:58:13 PST" duration-ms="101993">
+      <class name="iOS.tests.Test.AppiumIPADmain">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:56:31 PST" name="setUp" finished-at="2023-05-15T16:56:37 PST" duration-ms="5360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="setup()[pri:1, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:56:37 PST" name="setup" finished-at="2023-05-15T16:56:42 PST" duration-ms="5686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="applLaunch()[pri:1, instance:Android.tests.Test.AppiumMain@13e344d]" started-at="2023-05-13T22:25:35 PST" name="applLaunch" finished-at="2023-05-13T22:25:43 PST" duration-ms="7286" status="PASS">
+        <test-method signature="printingOptions()[pri:2, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:56:42 PST" name="printingOptions" finished-at="2023-05-15T16:56:46 PST" duration-ms="3390" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- applLaunch -->
-        <test-method signature="Register()[pri:2, instance:Android.tests.Test.AppiumMain@13e344d]" started-at="2023-05-13T22:25:43 PST" name="Register" finished-at="2023-05-13T22:25:43 PST" duration-ms="248" status="FAIL">
-          <exception class="java.lang.NoSuchFieldError">
+        </test-method> <!-- printingOptions -->
+        <test-method signature="actIndicator()[pri:3, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:56:46 PST" name="actIndicator" finished-at="2023-05-15T16:56:51 PST" duration-ms="4786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actIndicator -->
+        <test-method signature="datePicker()[pri:4, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:56:51 PST" name="datePicker" finished-at="2023-05-15T16:56:56 PST" duration-ms="4966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datePicker -->
+        <test-method signature="timePicker()[pri:5, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:56:56 PST" name="timePicker" finished-at="2023-05-15T16:57:07 PST" duration-ms="11591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timePicker -->
+        <test-method signature="ImageView()[pri:6, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:57:07 PST" name="ImageView" finished-at="2023-05-15T16:57:16 PST" duration-ms="8775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ImageView -->
+        <test-method signature="pageControl()[pri:7, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:57:16 PST" name="pageControl" finished-at="2023-05-15T16:57:18 PST" duration-ms="1804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageControl -->
+        <test-method signature="pickView()[pri:8, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:57:18 PST" name="pickView" finished-at="2023-05-15T16:57:20 PST" duration-ms="1956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pickView -->
+        <test-method signature="progView()[pri:9, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:57:20 PST" name="progView" finished-at="2023-05-15T16:57:31 PST" duration-ms="10717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- progView -->
+        <test-method signature="searchView()[pri:10, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:57:31 PST" name="searchView" finished-at="2023-05-15T16:57:38 PST" duration-ms="7485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchView -->
+        <test-method signature="segmentedControls()[pri:11, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:57:38 PST" name="segmentedControls" finished-at="2023-05-15T16:57:44 PST" duration-ms="6310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- segmentedControls -->
+        <test-method signature="sliderControl()[pri:12, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:57:44 PST" name="sliderControl" finished-at="2023-05-15T16:57:49 PST" duration-ms="4396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sliderControl -->
+        <test-method signature="stackViews()[pri:13, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:57:49 PST" name="stackViews" finished-at="2023-05-15T16:57:56 PST" duration-ms="7539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stackViews -->
+        <test-method signature="switches()[pri:14, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:57:56 PST" name="switches" finished-at="2023-05-15T16:58:00 PST" duration-ms="3920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switches -->
+        <test-method signature="textField()[pri:15, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:58:00 PST" name="textField" finished-at="2023-05-15T16:58:01 PST" duration-ms="736" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Factory]]>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'b19b418e60'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [ff94ed01-cd84-48ce-9621-228d9e4b172e, findElement {using=-ios class chain, value=**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]}]
+Capabilities {appium:app: /Users/collabera/Documents/..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPad mini (6th generation), appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 8D9FF380-E187-4C9F-8AB3-0F2..., appium:webStorageEnabled: false, platformName: IOS}
+Session ID: ff94ed01-cd84-48ce-9621-228d9e4b172e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchFieldError: Factory
-at org.apache.poi.xssf.model.ThemesTable.readFrom(ThemesTable.java:119)
-at org.apache.poi.xssf.model.ThemesTable.<init>(ThemesTable.java:87)
-at org.apache.poi.ooxml.POIXMLFactory.createDocumentPart(POIXMLFactory.java:61)
-at org.apache.poi.ooxml.POIXMLDocumentPart.read(POIXMLDocumentPart.java:661)
-at org.apache.poi.ooxml.POIXMLDocument.load(POIXMLDocument.java:165)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:260)
-at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.createWorkbook(XSSFWorkbookFactory.java:118)
-at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:98)
-at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:36)
-at org.apache.poi.ss.usermodel.WorkbookFactory.lambda$create$2(WorkbookFactory.java:224)
-at org.apache.poi.ss.usermodel.WorkbookFactory.wp(WorkbookFactory.java:329)
-at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:224)
-at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
-at Android.tests.Pages.Register_PageExcel.registerUserFromExcel(Register_PageExcel.java:58)
-at Android.tests.Test.AppiumMain.Register(AppiumMain.java:73)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'b19b418e60'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [ff94ed01-cd84-48ce-9621-228d9e4b172e, findElement {using=-ios class chain, value=**/XCUIElementTypeButton[`label == 'UIKitCatalog'`]}]
+Capabilities {appium:app: /Users/collabera/Documents/..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPad mini (6th generation), appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 8D9FF380-E187-4C9F-8AB3-0F2..., appium:webStorageEnabled: false, platformName: IOS}
+Session ID: ff94ed01-cd84-48ce-9621-228d9e4b172e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at iPAD.tests.Pages.TextField_Page.txtField(TextField_Page.java:38)
+at iPAD.tests.Pages.TextField_Page.getInfo(TextField_Page.java:90)
+at iOS.tests.Test.AppiumIPADmain.textField(AppiumIPADmain.java:164)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -65,15 +132,27 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchFieldError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Register -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Android.tests.Test.AppiumMain@13e344d]" started-at="2023-05-13T22:25:43 PST" name="tearDown" finished-at="2023-05-13T22:25:43 PST" duration-ms="330" status="PASS">
+        </test-method> <!-- textField -->
+        <test-method signature="toolBars()[pri:16, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:58:01 PST" name="toolBars" finished-at="2023-05-15T16:58:04 PST" duration-ms="2582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toolBars -->
+        <test-method signature="webViews()[pri:17, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:58:04 PST" name="webViews" finished-at="2023-05-15T16:58:08 PST" duration-ms="4255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webViews -->
+        <test-method signature="alert()[pri:18, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:58:08 PST" name="alert" finished-at="2023-05-15T16:58:13 PST" duration-ms="5043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:iOS.tests.Test.AppiumIPADmain@71ba6d4e]" started-at="2023-05-15T16:58:13 PST" name="tearDown" finished-at="2023-05-15T16:58:13 PST" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Android.tests.Test.AppiumMain -->
+      </class> <!-- iOS.tests.Test.AppiumIPADmain -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

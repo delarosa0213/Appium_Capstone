@@ -9,26 +9,34 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,280</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">17</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">101,993</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Android.tests.Test.AppiumMain</td><td><a href="#m0">Register</a></td><td rowspan="1">1683987943062</td><td rowspan="1">248</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Android.tests.Test.AppiumMain</td><td><a href="#m1">applLaunch</a></td><td rowspan="1">1683987935760</td><td rowspan="1">7286</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">iOS.tests.Test.AppiumIPADmain</td><td><a href="#m0">textField</a></td><td rowspan="1">1684141080850</td><td rowspan="1">736</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="17">iOS.tests.Test.AppiumIPADmain</td><td><a href="#m1">ImageView</a></td><td rowspan="1">1684141027798</td><td rowspan="1">8775</td></tr><tr class="passedeven"><td><a href="#m2">actIndicator</a></td><td rowspan="1">1684141006398</td><td rowspan="1">4786</td></tr><tr class="passedeven"><td><a href="#m3">alert</a></td><td rowspan="1">1684141088455</td><td rowspan="1">5043</td></tr><tr class="passedeven"><td><a href="#m4">datePicker</a></td><td rowspan="1">1684141011210</td><td rowspan="1">4966</td></tr><tr class="passedeven"><td><a href="#m5">pageControl</a></td><td rowspan="1">1684141036598</td><td rowspan="1">1804</td></tr><tr class="passedeven"><td><a href="#m6">pickView</a></td><td rowspan="1">1684141038422</td><td rowspan="1">1956</td></tr><tr class="passedeven"><td><a href="#m7">printingOptions</a></td><td rowspan="1">1684141002995</td><td rowspan="1">3390</td></tr><tr class="passedeven"><td><a href="#m8">progView</a></td><td rowspan="1">1684141040398</td><td rowspan="1">10717</td></tr><tr class="passedeven"><td><a href="#m9">searchView</a></td><td rowspan="1">1684141051130</td><td rowspan="1">7485</td></tr><tr class="passedeven"><td><a href="#m10">segmentedControls</a></td><td rowspan="1">1684141058629</td><td rowspan="1">6310</td></tr><tr class="passedeven"><td><a href="#m11">setup</a></td><td rowspan="1">1684140997296</td><td rowspan="1">5686</td></tr><tr class="passedeven"><td><a href="#m12">sliderControl</a></td><td rowspan="1">1684141064959</td><td rowspan="1">4396</td></tr><tr class="passedeven"><td><a href="#m13">stackViews</a></td><td rowspan="1">1684141069373</td><td rowspan="1">7539</td></tr><tr class="passedeven"><td><a href="#m14">switches</a></td><td rowspan="1">1684141076914</td><td rowspan="1">3920</td></tr><tr class="passedeven"><td><a href="#m15">timePicker</a></td><td rowspan="1">1684141016191</td><td rowspan="1">11591</td></tr><tr class="passedeven"><td><a href="#m16">toolBars</a></td><td rowspan="1">1684141081598</td><td rowspan="1">2582</td></tr><tr class="passedeven"><td><a href="#m17">webViews</a></td><td rowspan="1">1684141084184</td><td rowspan="1">4255</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Android.tests.Test.AppiumMain#Register</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchFieldError: Factory
-	at org.apache.poi.xssf.model.ThemesTable.readFrom(ThemesTable.java:119)
-	at org.apache.poi.xssf.model.ThemesTable.&lt;init&gt;(ThemesTable.java:87)
-	at org.apache.poi.ooxml.POIXMLFactory.createDocumentPart(POIXMLFactory.java:61)
-	at org.apache.poi.ooxml.POIXMLDocumentPart.read(POIXMLDocumentPart.java:661)
-	at org.apache.poi.ooxml.POIXMLDocument.load(POIXMLDocument.java:165)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:260)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.createWorkbook(XSSFWorkbookFactory.java:118)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:98)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:36)
-	at org.apache.poi.ss.usermodel.WorkbookFactory.lambda$create$2(WorkbookFactory.java:224)
-	at org.apache.poi.ss.usermodel.WorkbookFactory.wp(WorkbookFactory.java:329)
-	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:224)
-	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
-	at Android.tests.Pages.Register_PageExcel.registerUserFromExcel(Register_PageExcel.java:58)
-	at Android.tests.Test.AppiumMain.Register(AppiumMain.java:73)
+<h2>Default test</h2><h3 id="m0">iOS.tests.Test.AppiumIPADmain#textField</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;b19b418e60&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [ff94ed01-cd84-48ce-9621-228d9e4b172e, findElement {using=-ios class chain, value=**/XCUIElementTypeButton[`label == &apos;UIKitCatalog&apos;`]}]
+Capabilities {appium:app: /Users/collabera/Documents/..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPad mini (6th generation), appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.4, appium:takesScreenshot: true, appium:udid: 8D9FF380-E187-4C9F-8AB3-0F2..., appium:webStorageEnabled: false, platformName: IOS}
+Session ID: ff94ed01-cd84-48ce-9621-228d9e4b172e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at iPAD.tests.Pages.TextField_Page.txtField(TextField_Page.java:38)
+	at iPAD.tests.Pages.TextField_Page.getInfo(TextField_Page.java:90)
+	at iOS.tests.Test.AppiumIPADmain.textField(AppiumIPADmain.java:164)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -56,6 +64,22 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Android.tests.Test.AppiumMain#applLaunch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">iOS.tests.Test.AppiumIPADmain#ImageView</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">iOS.tests.Test.AppiumIPADmain#actIndicator</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">iOS.tests.Test.AppiumIPADmain#alert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">iOS.tests.Test.AppiumIPADmain#datePicker</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">iOS.tests.Test.AppiumIPADmain#pageControl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">iOS.tests.Test.AppiumIPADmain#pickView</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">iOS.tests.Test.AppiumIPADmain#printingOptions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">iOS.tests.Test.AppiumIPADmain#progView</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">iOS.tests.Test.AppiumIPADmain#searchView</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">iOS.tests.Test.AppiumIPADmain#segmentedControls</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">iOS.tests.Test.AppiumIPADmain#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">iOS.tests.Test.AppiumIPADmain#sliderControl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">iOS.tests.Test.AppiumIPADmain#stackViews</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">iOS.tests.Test.AppiumIPADmain#switches</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">iOS.tests.Test.AppiumIPADmain#timePicker</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">iOS.tests.Test.AppiumIPADmain#toolBars</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">iOS.tests.Test.AppiumIPADmain#webViews</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

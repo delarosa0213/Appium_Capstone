@@ -2,6 +2,7 @@ package iOS.tests.Test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
@@ -30,6 +31,7 @@ import iPAD.tests.Pages.Search_Page;
 import iPAD.tests.Pages.SegmentedControls_Page;
 import iPAD.tests.Pages.Slider_Page;
 import iPAD.tests.Pages.StackViews_Page;
+import iPAD.tests.Pages.TextField_Page;
 import iPAD.tests.Pages.Switch_Page;
 import iPAD.tests.Pages.Toolbars_Page;
 import iPAD.tests.Pages.WebViews_Page;
@@ -41,18 +43,19 @@ public class AppiumIPADmain {
 	static IOSDriver driver;
 	static ExtentReports extent;
     static ExtentTest test;
+    private static File directory;
     
     @BeforeTest
     public void setUp() {
     	String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date(System.currentTimeMillis()));
         String folderName = "iPadTest-" + timeStamp;
-        File directory = new File("results/iOS/iPAD/" + folderName);
+        directory = new File("results/iOS/iPAD/" + folderName);
         if (!directory.exists()) {
             directory.mkdirs();
         }
 
         extent = new ExtentReports(directory.getAbsolutePath() + "/TestResult.html");
-        test  = extent.startTest("iPAD testing UIKit Catalog");
+        test  = extent.startTest("iOS testing UIKit Catalog");
 	    
     }
     @AfterTest
@@ -68,18 +71,18 @@ public class AppiumIPADmain {
 		  test.log(LogStatus.PASS, "Application successfully launched!");
 	  }
 	  @Test(priority = 2)
-	  public void printingOptions() {
+	  public void printingOptions() throws IOException {
 		  //test = extent.startTest("Printing Options Test");
-		  PrintingOptions_Page print = new PrintingOptions_Page(driver, test);
+		  PrintingOptions_Page print = new PrintingOptions_Page(driver, test, directory);
 		  print.print();
 		  test.log(LogStatus.PASS, "Printing options count retrieved successfully");
 		  
 
 	  }
 	  @Test(priority = 3)
-	  public void actIndicator() {
+	  public void actIndicator() throws IOException, InterruptedException {
 		  //test  = extent.startTest("Checking Activity indicator if clickable");
-		  ActivityIndicator_Page act = new ActivityIndicator_Page(driver, test);
+		  ActivityIndicator_Page act = new ActivityIndicator_Page(driver, test, directory);
 		  act.actvityIndi();
 		  test.log(LogStatus.PASS, "Activity Indicator visible");
 	  }
@@ -130,8 +133,8 @@ public class AppiumIPADmain {
 		  test.log(LogStatus.PASS, "Successfully typed letters");
 	  }
 	  @Test(priority = 11)
-	  public void segmentedControls() {
-		  SegmentedControls_Page sp = new SegmentedControls_Page(driver, test);
+	  public void segmentedControls() throws IOException, InterruptedException {
+		  SegmentedControls_Page sp = new SegmentedControls_Page(driver, test, directory);
 		  sp.segmentedControl();
 		  test.log(LogStatus.PASS, "Successfully toggled all the button!");
 	  }
@@ -155,12 +158,12 @@ public class AppiumIPADmain {
 		  swp.switchPage();
 		  test.log(LogStatus.PASS, "Both switches toggled!");
 	  }
-//	  @Test(priority = 15)
-//	  public void textField() throws InterruptedException{
-//		  TextField_Page txtF = new TextField_Page(driver, test);
-//		  txtF.txtField();
-//		  test.log(LogStatus.PASS, "Test Successfully executed!");
-//	  }
+	  @Test(priority = 15)
+	  public void textField() throws InterruptedException, IOException{
+		  TextField_Page txtF = new TextField_Page(driver, test, directory);
+		  txtF.getInfo("src/test/java/utils/loginCredentials.xlsx", 1);
+		  test.log(LogStatus.PASS, "Test Successfully executed!");
+	  }
 	  @Test(priority = 16)
 	  public void toolBars(){
 		  Toolbars_Page tools = new Toolbars_Page(driver, test);
@@ -175,8 +178,8 @@ public class AppiumIPADmain {
 		  test.log(LogStatus.PASS, "Test Successfully executed!");
 	  }
 	  @Test(priority = 18)
-	  public void alert(){
-		  AlertViews_Page al = new AlertViews_Page(driver, test);
+	  public void alert() throws InterruptedException, IOException{
+		  AlertViews_Page al = new AlertViews_Page(driver, test, directory);
 		  al.alertViews();
 		  test.log(LogStatus.PASS, "Test Successfully executed!");
 		  extent.endTest(test);

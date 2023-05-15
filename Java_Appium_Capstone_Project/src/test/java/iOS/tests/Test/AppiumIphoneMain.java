@@ -2,6 +2,7 @@ package iOS.tests.Test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
@@ -38,19 +39,20 @@ public class AppiumIphoneMain {
 	static IOSDriver driver;
 	static ExtentReports extent;
     static ExtentTest test;
+    private static File directory;
   
 
     @BeforeTest
     public void setUp() {
     	String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date(System.currentTimeMillis()));
         String folderName = "iPhoneTest-" + timeStamp;
-        File directory = new File("results/iOS/iPhone/" + folderName);
+        directory = new File("results/iOS/iPhone/" + folderName);
         if (!directory.exists()) {
             directory.mkdirs();
         }
 
         extent = new ExtentReports(directory.getAbsolutePath() + "/TestResult.html");
-        test  = extent.startTest("iPAD testing UIKit Catalog");
+        test  = extent.startTest("iOS testing UIKit Catalog");
 	    
 	    }
 	    @AfterTest
@@ -67,15 +69,15 @@ public class AppiumIphoneMain {
 		  test.log(LogStatus.PASS, "Application successfully launched!");
 	  }
 	  @Test(priority = 2)
-	  public void scrollGes() {
-		  ScrollGesture_Page scroll = new ScrollGesture_Page(driver, test);
+	  public void scrollGes() throws IOException {
+		  ScrollGesture_Page scroll = new ScrollGesture_Page(driver, test, directory);
 		  scroll.scroll();
 		  test.log(LogStatus.PASS, "Printing options count retrieved successfully");
 		  
 	  }
 	  @Test(priority = 3)
-	  public void actIndicator() {
-		  ActivityIndicator_Page act = new ActivityIndicator_Page(driver, test);
+	  public void actIndicator() throws IOException, InterruptedException {
+		  ActivityIndicator_Page act = new ActivityIndicator_Page(driver, test, directory);
 		  act.actvityIndi();
 		  test.log(LogStatus.PASS, "Activity Indicator visible");
 	  }
@@ -122,8 +124,8 @@ public class AppiumIphoneMain {
 		  test.log(LogStatus.PASS, "Successfully typed letters");
 	  }
 	  @Test(priority = 11)
-	  public void segmentedControls() {
-		  SegmentedControls_Page sp = new SegmentedControls_Page(driver, test);
+	  public void segmentedControls() throws IOException, InterruptedException {
+		  SegmentedControls_Page sp = new SegmentedControls_Page(driver, test, directory);
 		  sp.segmentedControl();
 		  test.log(LogStatus.PASS, "Successfully toggled all the button!");
 	  }
@@ -147,9 +149,9 @@ public class AppiumIphoneMain {
 		  test.log(LogStatus.PASS, "Both switches toggled!");
 	  }
 	  @Test(priority = 15)
-	  public void textField() throws InterruptedException{
-		  TextField_Page txtF = new TextField_Page(driver, test);
-		  txtF.txtField();
+	  public void textField() throws InterruptedException, IOException{
+		  TextField_Page txtF = new TextField_Page(driver, test, directory);
+		  txtF.getInfo("src/test/java/utils/loginCredentials.xlsx", 1);
 		  test.log(LogStatus.PASS, "Test Successfully executed!");
 	  }
 	  @Test(priority = 16)
@@ -166,8 +168,8 @@ public class AppiumIphoneMain {
 		  test.log(LogStatus.PASS, "Test Successfully executed!");
 	  }
 	  @Test(priority = 18)
-	  public void alert(){
-		  AlertViews_Page al = new AlertViews_Page(driver, test);
+	  public void alert() throws InterruptedException, IOException{
+		  AlertViews_Page al = new AlertViews_Page(driver, test, directory);
 		  al.alertViews();
 		  test.log(LogStatus.PASS, "Test Successfully executed!");
 		  extent.endTest(test);
